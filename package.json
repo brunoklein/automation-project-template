@@ -1,0 +1,15 @@
+{
+    "name": "automation-project-template",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "smoke": "docker-compose up -d --force-recreate --remove-orphans && npx codeceptjs run --steps --grep @smoke"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.6.2",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.3",
+        "codeceptjs": "^3.0.5",
+        "dotenv": "^8.2.0"
+    }
+}
